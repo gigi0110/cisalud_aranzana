@@ -1,0 +1,233 @@
+@import "variables";
+
+/*Index*/
+
+.titulo {
+    text-align: $centrar;
+    margin-top: 30px;
+
+    &__principal {
+        color: $blanco;
+        background-color: $violeta;
+        border-radius: 1px;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__principal--gris {
+        @extend .titulo__principal;
+        background-color: $gris_medio;
+    }
+
+}
+
+.tapa {
+    &__ultimoNumero {
+        border-style: solid;
+        border-width: 1px;
+        border-color: $gris_oscuro;
+        box-shadow: 7px 7px 7px $gris_oscuro;
+        width: 400px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 55px;
+
+        @media only screen and (max-width: 767px) {
+            width: 95%;
+            margin-left: auto;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width:1023px) {
+            width: 99%;
+            height: auto;
+            margin-left: auto;
+        }
+    }
+
+    &__ultimoNumero:hover {
+        cursor: pointer;
+        transform: scale(105%);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+
+}
+
+.auspiciantes {
+    &__logo {
+        width: 160px;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+
+        @media only screen and (max-width: 767px) {
+            width: 95px;
+            padding: 10px;
+            margin-left: 0px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width:1023px) {
+            width: 30%;
+            margin-left: 5px;
+        }
+    }
+
+    &__logo:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+
+    &__logo:active {
+        transform: translateY(5px);
+    }
+}
+
+/* números anteriores */
+
+.tapa {
+    &__numerosAnteriores {
+        margin-top: 7px;
+        margin-left: 3px;
+
+        @media only screen and (max-width: 767px) {
+            width: 45%;
+            margin-left: 10px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width:1023px) {
+            margin-top: 15px;
+            margin-left: 11px;
+        }
+
+    }
+
+    &__numerosAnteriores:hover {
+        @extend .tapa__ultimoNumero:hover;
+        transform: scale(110%);
+    }
+}
+
+@mixin border-box-shadow ($borde, $sombra) {
+    border: $borde;
+    box-shadow: $sombra;
+}
+
+.tapa__numerosAnteriores {
+    @include border-box-shadow (solid 1px $gris_oscuro, 7px 7px 7px $gris_oscuro);
+}
+
+/* css la revista */
+
+.tapa {
+
+    &__revistaHistorica {
+        margin-top: 30px;
+        padding: 34px;
+        box-shadow: 7px 7px 7px $gris_oscuro;
+
+        @media only screen and (max-width: 767px) {
+            width: 15%;
+            margin-left: 15px;
+            padding: 1px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width:1023px) {
+            width: 100px;
+            height: auto;
+            padding: 2px;
+            margin-left: 30px;
+
+        }
+    }
+}
+
+.textoHistoria {
+    &__titulo {
+        text-align: center;
+        text-transform: sentencecase;
+        color: $blanco;
+        background-color: $gris_medio;
+        margin-top: 30px;
+    }
+
+    &__parrafo {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        text-transform: sentencecase;
+        color: $gris_medio;
+
+        @media only screen and (max-width: 767px) {
+            text-align: left;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 1rem;
+            line-height: 1.25rem;
+        }
+    }
+}
+
+/* css noticias */
+.noticias {
+    display: flex;
+    justify-content: center;
+
+    &__video {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 7px 7px 7px $gris_oscuro;
+
+        @media only screen and (max-width: 767px) {
+            height: 200px;
+            margin-left: 0;
+        }
+    }
+
+    &__parrafo {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-top: 20px;
+        text-align: justify;
+        text-transform: sentencecase;
+        color: $gris_medio;
+
+        @media only screen and (max-width: 767px) {
+            text-align: left;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 1rem;
+            line-height: 1.25rem;
+        }
+    }
+}
+
+a:link {
+    color: $gris_medio
+}
+
+a:visited {
+    color: $gris_medio
+}
+
+a:hover {
+    color: $gris_claro
+}
+
+/*contacto*/
+
+.bordeWeb {
+    width: 1890px;
+    height: auto;
+    margin-left: 0;
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}

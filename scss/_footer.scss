@@ -1,0 +1,30 @@
+@import "variables";
+
+.footer {
+	height: 140px;
+	margin-top: 15px;
+	background: linear-gradient(to left top, $azul_grisaceo, $rojo);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__icono {
+		padding: 10px;
+		
+
+		@media only screen and (max-width: 767px) {
+			height: 40px;
+			width: auto;
+		}
+	}
+
+	&__icono:hover {
+		cursor: pointer;
+		transform: translateY(-5px);
+		transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+	}
+
+	&__icono:active {
+		transform: translateY(5px);
+	}
+}
