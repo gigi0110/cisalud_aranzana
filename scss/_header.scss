@@ -2,22 +2,31 @@
 
 .bg-light {
     background-color: $celeste_grisaceo !important;
-    box-shadow: 1px 1px 1px $azul_grisaceo;
 }
 
 .logoCisalud {
     padding: 30px;
- 
-     @media only screen and (max-width: 767px) {
-         width: 50%;
-         height: auto;
-     }
- }
+
+    @media only screen and (max-width: 767px) {
+        width: 70%;
+        height: auto;
+    }
+}
 
 .navbar-nav {
     margin-left: auto;
 }
 
+
+.navbar-brand {
+    display: inline;
+}
+
+.navbar-toggler {
+    @media only screen and (max-width: 767px) {
+        font-size: 1rem;
+    }
+}
 
 .navbar {
     @media only screen and (max-width: 767px) {

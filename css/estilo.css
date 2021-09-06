@@ -11,18 +11,24 @@ a {
 /* variables color */
 /* variables ubicación */
 .bg-light {
-  background-color: #d7dee8 !important;
-  box-shadow: 1px 1px 1px #333333; }
+  background-color: #d7dee8 !important; }
 
 .logoCisalud {
   padding: 30px; }
   @media only screen and (max-width: 767px) {
     .logoCisalud {
-      width: 50%;
+      width: 70%;
       height: auto; } }
 
 .navbar-nav {
   margin-left: auto; }
+
+.navbar-brand {
+  display: inline; }
+
+@media only screen and (max-width: 767px) {
+  .navbar-toggler {
+    font-size: 1rem; } }
 
 @media only screen and (max-width: 767px) {
   .navbar {
@@ -193,6 +199,14 @@ a:visited {
 
 a:hover {
   color: lightgrey; }
+
+/*contacto*/
+.bordeWeb {
+  width: 1890px;
+  height: auto; }
+  @media only screen and (max-width: 767px) {
+    .bordeWeb {
+      display: none; } }
 
 /* variables color */
 /* variables ubicación */
