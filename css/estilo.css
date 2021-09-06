@@ -194,15 +194,6 @@ a:visited {
 a:hover {
   color: lightgrey; }
 
-/*contacto*/
-.bordeWeb {
-  width: 1890px;
-  height: auto;
-  margin-left: 0; }
-  @media only screen and (max-width: 767px) {
-    .bordeWeb {
-      display: none; } }
-
 /* variables color */
 /* variables ubicación */
 form {

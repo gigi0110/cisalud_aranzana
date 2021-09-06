@@ -217,15 +217,3 @@ a:visited {
 a:hover {
     color: $gris_claro
 }
-
-/*contacto*/
-
-.bordeWeb {
-    width: 1890px;
-    height: auto;
-    margin-left: 0;
-
-    @media only screen and (max-width: 767px) {
-        display: none;
-    }
-}
