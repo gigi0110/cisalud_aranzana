@@ -10,6 +10,9 @@ a {
 
 /* variables color */
 /* variables ubicación */
+.container-fluid {
+  padding: 0; }
+
 .bg-light {
   background-color: #d7dee8 !important; }
 
@@ -17,7 +20,7 @@ a {
   padding: 30px; }
   @media only screen and (max-width: 767px) {
     .logoCisalud {
-      width: 70%;
+      width: 60%;
       height: auto; } }
 
 .navbar-nav {
@@ -28,7 +31,8 @@ a {
 
 @media only screen and (max-width: 767px) {
   .navbar-toggler {
-    font-size: 1rem; } }
+    font-size: 0.75rem;
+    margin-left: 50px; } }
 
 @media only screen and (max-width: 767px) {
   .navbar {
@@ -53,42 +57,46 @@ a {
         font-size: 1.75rem; } }
   .titulo__principal--gris {
     background-color: gray; }
+    @media only screen and (max-width: 767px) {
+      .titulo__principal--gris {
+        font-size: 1.5rem; } }
 
-.tapa__ultimoNumero {
-  border-style: solid;
-  border-width: 1px;
-  border-color: darkgray;
-  box-shadow: 7px 7px 7px darkgray;
-  width: 400px;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 55px; }
-  @media only screen and (max-width: 767px) {
-    .tapa__ultimoNumero {
-      width: 95%;
-      margin-left: auto; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .tapa__ultimoNumero {
-      width: 99%;
-      height: auto;
-      margin-left: auto; } }
-
-.tapa__ultimoNumero:hover, .tapa__numerosAnteriores:hover {
-  cursor: pointer;
-  transform: scale(105%);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
+.tapa {
+  display: flex;
+  justify-content: center; }
+  .tapa__ultimoNumero {
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgray;
+    box-shadow: 7px 7px 7px darkgray;
+    width: 400px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+    @media only screen and (max-width: 767px) {
+      .tapa__ultimoNumero {
+        width: 95%;
+        margin-left: auto; } }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .tapa__ultimoNumero {
+        width: 99%;
+        height: auto;
+        margin-left: auto; } }
+  .tapa__ultimoNumero:hover, .tapa__numerosAnteriores:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
 
 .auspiciantes__logo {
   width: 160px;
   height: auto;
   margin-top: 20px;
+  margin-bottom: 10px;
   padding: 10px; }
   @media only screen and (max-width: 767px) {
     .auspiciantes__logo {
-      width: 95px;
-      padding: 10px;
-      margin-left: 0px; } }
+      width: 30%;
+      padding: 10px; } }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .auspiciantes__logo {
       width: 30%;
@@ -104,16 +112,15 @@ a {
 
 /* números anteriores */
 .tapa__lista {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none; }
+  justify-content: center; }
 
 .tapa__numerosAnteriores {
-  margin-top: 8px;
-  margin-right: 5px;
-  margin-left: 5px; }
+  margin-top: 20px;
+  margin-right: 5px; }
 
 .tapa__numerosAnteriores:hover {
   transform: scale(110%); }
@@ -125,26 +132,21 @@ a {
 /* css la revista */
 .tapa__revistaHistorica {
   margin-top: 30px;
-  padding: 34px;
+  padding: 30px;
   box-shadow: 7px 7px 7px darkgray; }
   @media only screen and (max-width: 767px) {
     .tapa__revistaHistorica {
       width: 15%;
       margin-left: 15px;
       padding: 1px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .tapa__revistaHistorica {
-      width: 100px;
-      height: auto;
-      padding: 2px;
-      margin-left: 30px; } }
 
 .textoHistoria__titulo {
   text-align: center;
   text-transform: sentencecase;
   color: white;
   background-color: gray;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 20px; }
 
 .textoHistoria__parrafo {
   font-family: 'Source Sans Pro', sans-serif;
@@ -153,7 +155,8 @@ a {
   line-height: 1.5rem;
   text-align: justify;
   text-transform: sentencecase;
-  color: gray; }
+  color: gray;
+  margin-top: 25px; }
   @media only screen and (max-width: 767px) {
     .textoHistoria__parrafo {
       text-align: left;
@@ -168,11 +171,11 @@ a {
   justify-content: center; }
   .noticias__video {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 7px 7px 7px darkgray; }
     @media only screen and (max-width: 767px) {
       .noticias__video {
-        height: 200px;
+        height: 400px;
         margin-left: 0; } }
   .noticias__parrafo {
     font-family: 'Source Sans Pro', sans-serif;
@@ -214,6 +217,7 @@ form {
   margin-top: 20px;
   margin-right: 450px;
   margin-left: 450px;
+  margin-bottom: 35px;
   padding: 30px;
   box-shadow: 7px 7px 7px darkgray; }
   form .form-control:focus {
@@ -254,7 +258,7 @@ body {
 /* variables ubicación */
 .footer {
   height: 140px;
-  margin-top: 15px;
+  margin-top: 50px;
   background: linear-gradient(to left top, #333333, #d42027);
   display: flex;
   justify-content: center;
@@ -263,7 +267,7 @@ body {
     padding: 10px; }
     @media only screen and (max-width: 767px) {
       .footer__icono {
-        height: 40px;
+        height: 50px;
         width: auto; } }
   .footer__icono:hover {
     cursor: pointer;
