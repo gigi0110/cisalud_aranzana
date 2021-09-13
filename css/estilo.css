@@ -45,6 +45,9 @@ a {
   #navbarNav {
     margin-left: 30px; } }
 
+.active:hover {
+  color: #d42027 !important; }
+
 /* variables color */
 /* variables ubicación */
 /*Index*/
