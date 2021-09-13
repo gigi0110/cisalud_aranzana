@@ -13,6 +13,9 @@ a {
 .container-fluid {
   padding: 0; }
 
+.header {
+  padding: 0; }
+
 .bg-light {
   background-color: #d7dee8 !important; }
 
@@ -262,6 +265,9 @@ body {
 
 /* variables color */
 /* variables ubicación */
+.row {
+  margin: 0; }
+
 .footer {
   height: 140px;
   margin-top: 50px;
