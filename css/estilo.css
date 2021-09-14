@@ -94,14 +94,14 @@ a {
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
 
 .auspiciantes__logo {
-  width: 160px;
+  width: 150px;
   height: auto;
   margin-top: 20px;
   margin-bottom: 10px;
   padding: 10px; }
   @media only screen and (max-width: 767px) {
     .auspiciantes__logo {
-      width: 30%;
+      width: 32%;
       padding: 10px; } }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .auspiciantes__logo {
@@ -207,7 +207,7 @@ a {
         line-height: 1.25rem; } }
 
 a:link {
-  color: gray; }
+  color: white; }
 
 a:visited {
   color: gray; }
@@ -271,22 +271,50 @@ body {
 .row {
   margin: 0; }
 
-.footer {
-  height: 140px;
-  margin-top: 50px;
+.bg-degrade {
   background: linear-gradient(to left top, #333333, #d42027);
+  margin-top: 50px; }
+  @media only screen and (max-width: 767px) {
+    .bg-degrade {
+      margin-top: 30px; } }
+
+@media only screen and (max-width: 767px) {
+  .navbar-brand--bl {
+    width: 80%;
+    margin-left: 20px; } }
+
+.footer {
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .footer {
+      height: 60px; } }
   .footer__icono {
-    padding: 10px; }
-    @media only screen and (max-width: 767px) {
-      .footer__icono {
-        height: 50px;
-        width: auto; } }
+    height: 30px;
+    padding: 5px; }
   .footer__icono:hover {
     cursor: pointer;
     transform: translateY(-5px);
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
   .footer__icono:active {
     transform: translateY(5px); }
+  .footer__mail {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white; }
+    @media only screen and (max-width: 767px) {
+      .footer__mail {
+        font-size: 1.15rem; } }
+  .footer__produced {
+    display: flex;
+    justify-content: center; }
+    .footer__produced--texto {
+      margin-top: 15px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #333333;
+      justify-content: center; }
