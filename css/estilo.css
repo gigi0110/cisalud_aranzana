@@ -117,16 +117,46 @@ a {
   transform: translateY(5px); }
 
 /* números anteriores */
+#carouselExampleInterval {
+  margin-left: 80px; }
+  @media only screen and (min-width: 1024px) {
+    #carouselExampleInterval {
+      display: none; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #carouselExampleInterval {
+      display: none; } }
+
+.carousel-control-next-icon {
+  background-color: gray; }
+
+.w-100 {
+  width: auto !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgray;
+  box-shadow: 7px 7px 7px darkgray;
+  margin-top: 20px; }
+
+.centrar {
+  display: flex;
+  justify-content: center; }
+
 .tapa__lista {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    .tapa__lista {
+      display: none; } }
 
 .tapa__numerosAnteriores {
   margin-top: 20px;
   margin-right: 5px; }
+  @media only screen and (max-width: 767px) {
+    .tapa__numerosAnteriores {
+      width: 80%; } }
 
 .tapa__numerosAnteriores:hover {
   transform: scale(110%); }
@@ -292,8 +322,11 @@ body {
     .footer {
       height: 60px; } }
   .footer__icono {
-    height: 30px;
-    padding: 5px; }
+    padding: 20px; }
+    @media only screen and (max-width: 767px) {
+      .footer__icono {
+        height: 30px;
+        padding: 5px; } }
   .footer__icono:hover {
     cursor: pointer;
     transform: translateY(-5px);

@@ -19,6 +19,7 @@
     &__principal--gris {
         @extend .titulo__principal;
         background-color: $gris_medio;
+
         @media only screen and (max-width: 767px) {
             font-size: 1.5rem;
         }
@@ -92,6 +93,37 @@
 
 /* números anteriores */
 
+#carouselExampleInterval {
+
+    margin-left: 80px;
+
+    @media only screen and (min-width: 1024px) {
+        display: none;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width:1023px) {
+        display: none;
+    }
+}
+
+.carousel-control-next-icon {
+    background-color: $gris_medio;
+}
+
+.w-100 {
+    width: auto !important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $gris_oscuro;
+    box-shadow: 7px 7px 7px $gris_oscuro;
+    margin-top: 20px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
 .tapa {
     &__lista {
         list-style-type: none;
@@ -99,11 +131,20 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__numerosAnteriores {
         margin-top: 20px;
         margin-right: 5px;
+
+        @media only screen and (max-width: 767px) {
+            width: 80%;
+
+        }
     }
 
     &__numerosAnteriores:hover {

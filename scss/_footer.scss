@@ -31,9 +31,11 @@
 
 
 	&__icono {
-		height: 30px;
-		padding: 5px;
-		
+		@media only screen and (max-width: 767px) {
+			height: 30px;
+			padding: 5px;
+		}
+		padding: 20px;
 	}
 
 	&__icono:hover {
