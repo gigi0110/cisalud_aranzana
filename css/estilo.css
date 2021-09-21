@@ -28,6 +28,9 @@ a {
 
 .navbar-nav {
   margin-left: auto; }
+  @media only screen and (max-width: 767px) {
+    .navbar-nav {
+      margin-left: 35px; } }
 
 .navbar-brand {
   display: inline; }
@@ -243,7 +246,7 @@ a {
         line-height: 1.25rem; } }
 
 a:link {
-  color: lightgrey; }
+  color: darkgray; }
 
 a:visited {
   color: gray; }
